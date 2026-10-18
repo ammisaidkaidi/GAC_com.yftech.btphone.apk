@@ -1,0 +1,61 @@
+.class Lcom/yftech/btphone/presenter/SearchPresenter$1;
+.super Ljava/lang/Object;
+.source "SearchPresenter.java"
+
+# interfaces
+.implements Lcom/yftech/btphone/lib/listener/IBluetoothContactsListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/yftech/btphone/presenter/SearchPresenter;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/yftech/btphone/presenter/SearchPresenter;
+
+
+# direct methods
+.method constructor <init>(Lcom/yftech/btphone/presenter/SearchPresenter;)V
+    .locals 0
+
+    .line 36
+    iput-object p1, p0, Lcom/yftech/btphone/presenter/SearchPresenter$1;->this$0:Lcom/yftech/btphone/presenter/SearchPresenter;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onBluetoothContactsListChanged(Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/yftech/car/bluetooth/model/Contacts;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 39
+    iget-object v0, p0, Lcom/yftech/btphone/presenter/SearchPresenter$1;->this$0:Lcom/yftech/btphone/presenter/SearchPresenter;
+
+    invoke-virtual {v0}, Lcom/yftech/btphone/presenter/SearchPresenter;->getView()Lcom/yftech/btphone/lib/base/view/IView;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/yftech/btphone/app/SearchActivity;
+
+    invoke-virtual {v0, p1}, Lcom/yftech/btphone/app/SearchActivity;->onBluetoothContactsListChanged(Ljava/util/List;)V
+
+    return-void
+.end method

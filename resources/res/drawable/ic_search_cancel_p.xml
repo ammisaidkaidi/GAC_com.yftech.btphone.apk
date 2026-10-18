@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/search_cancel"/>
+    <item
+        android:height="64dp"
+        android:width="126dp"
+        android:drawable="@drawable/ic_search_cancel_p1"
+        android:left="5dp"
+        android:top="1dp"
+        android:right="5dp"/>
+</layer-list>

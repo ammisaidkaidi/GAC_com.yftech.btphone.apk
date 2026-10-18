@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="false"
+        android:drawable="@mipmap/btp_icon_search"/>
+    <item android:state_pressed="true">
+        <bitmap
+            android:src="@mipmap/btp_icon_search"
+            android:alpha="0.7"/>
+    </item>
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <bitmap
+            android:src="@mipmap/bt_btn_cancel_bg"
+            android:alpha="0.8"/>
+    </item>
+    <item android:drawable="@mipmap/bt_btn_cancel_bg"/>
+</selector>

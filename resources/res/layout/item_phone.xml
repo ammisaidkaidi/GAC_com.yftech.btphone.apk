@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <com.yftech.btphone.view.FontTextView
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_phone_title"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:text="12dddddddddddddd3"
+        android:singleLine="true"
+        app:fontType="@string/font_source_medium"/>
+    <com.yftech.btphone.view.FontTextView
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="123"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textDirection="ltr"
+        android:layout_marginStart="20dp"
+        app:fontType="@string/font_roboto_regular"/>
+</LinearLayout>

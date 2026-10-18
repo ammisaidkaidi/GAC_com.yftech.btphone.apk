@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:background="@mipmap/call_active_mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"/>
+    <ImageView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/imageViewAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:scaleType="center"
+        android:layout_marginStart="280dp"
+        android:layout_marginEnd="280dp"/>
+    <FrameLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/ll_detail"
+            android:layout_width="820dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+            <include layout="@layout/layout_call_people_msg"/>
+            <include layout="@layout/layout_call_bottom_bar"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_gravity="center_vertical"
+            android:id="@+id/fl_extend"
+            android:visibility="visible"
+            android:layout_width="820dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/ll_keyboard_detail"
+                android:background="@drawable/pic_card_bg_496px"
+                android:padding="46dp"
+                android:visibility="gone"
+                android:layout_width="@dimen/card_width"
+                android:layout_height="@dimen/card_height">
+                <com.yftech.btphone.view.KeyboardNumView
+                    android:id="@+id/key_board"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/key_board_height"
+                    android:layoutDirection="ltr"/>
+            </LinearLayout>
+            <include layout="@layout/layout_call_people_msg_ex"/>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

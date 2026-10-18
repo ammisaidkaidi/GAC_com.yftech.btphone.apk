@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yftech.btphone.view.FontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="28sp"
+    android:textColor="@android:color/white"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/tv_search_name"
+    android:background="@drawable/search_item_selector"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="280dp"
+    android:minWidth="60dp"
+    android:text="afdfadfadfadfadfadfadfadagsagfshs"
+    android:maxLines="1"/>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_keyboard"
+    android:background="@drawable/pic_card_bg_496px"
+    android:padding="46dp"
+    android:layout_width="@dimen/card_width"
+    android:layout_height="@dimen/card_height"
+    android:layoutDirection="ltr"
+    android:layout_marginStart="20dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+    <com.yftech.btphone.view.KeyboardNumView
+        android:id="@+id/key_board"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/key_board_height"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/img_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btp_btn_accept_100px_nor"/>
+</LinearLayout>

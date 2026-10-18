@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contacts_used_text_size">24sp</dimen>
+    <dimen name="contacts_used_width">180dp</dimen>
+    <dimen name="download_btn_text_size">25sp</dimen>
+    <dimen name="download_btn_width">320dp</dimen>
+    <dimen name="main_type_layout_marginTop">-10dp</dimen>
+    <dimen name="main_type_text_size">26sp</dimen>
+    <dimen name="search_btn_text_size">27sp</dimen>
+</resources>
